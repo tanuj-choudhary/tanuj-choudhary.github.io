@@ -1,0 +1,70 @@
+/*********************Globals*********************/
+:root {
+  --bg-color-1: #2b2c2c;
+  --bg-color-2: #303131;
+  --primary-color: #feb634;
+  --text-color-1: #cccccc;
+  --text-color-2: #9f9f9f;
+  --white: #fff;
+  --black: #000000;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+}
+
+/****Background****/
+section:nth-child(odd) {
+  background-color: var(--bg-color-1);
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-color-2);
+}
+
+/****Typograpghy****/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-color-1);
+}
+
+p {
+  color: var(--text-color-2);
+}
+
+/****Buttons****/
+.btn {
+  padding: 1rem 4rem;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 2px solid var(--primary-color);
+  letter-spacing: 1.6px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+.btn-primary-outline {
+  background-color: var(--bg-color-2);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  letter-spacing: 1.6px;
+}
