@@ -50,7 +50,7 @@ p {
 
 /****Buttons****/
 .btn {
-  padding: 1rem 4rem;
+  padding: 1.2rem 4.2rem;
   vertical-align: middle;
   cursor: pointer;
   font-size: 1.25rem;
@@ -77,6 +77,10 @@ p {
 }
 
 /*********************Navigation*********************/
+.page__header {
+  padding-bottom: 15px;
+}
+
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -128,7 +132,7 @@ p {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -145,6 +149,76 @@ p {
     margin-left: 3rem;
     font-size: 1rem;
     line-height: 0;
+  }
+}
+
+/*********************Hero Section*********************/
+.hero-container {
+  padding-top: 5rem;
+}
+
+.hero-container__h1 {
+  font-size: 2.9rem;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 5.5rem;
+}
+
+.hero-container__p {
+  max-width: 400px;
+  font-size: 1.5rem;
+  color: #cccccc;
+  margin-bottom: 2.2rem;
+  line-height: 1.9rem;
+}
+
+.hero-container__img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-container__left {
+    width: 40%;
+  }
+  .hero-container__right {
+    width: 50%;
+  }
+  .hero-container__img {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-container__h1 {
+    padding-top: 30px;
+    font-size: 3.5rem;
+  }
+  .hero-container__p {
+    font-size: 1.9rem;
+    margin-bottom: 3.2rem;
+  }
+  .hero-container__right {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-container__h1 {
+    padding-top: 125px;
+    font-size: 4.4rem;
+  }
+  .hero-container__p {
+    font-size: 1.5rem;
+  }
+  .hero-container__right {
+    width: 60%;
   }
 }
 
