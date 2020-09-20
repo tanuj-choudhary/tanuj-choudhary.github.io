@@ -222,6 +222,82 @@ p {
   }
 }
 
+/*********************About Section*********************/
+
+.container__about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.section__about__h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.25rem;
+}
+
+.section__about__p {
+  margin-bottom: 2.2rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.section__about__btns {
+  display: flex;
+}
+
+.btn-view,
+.btn-download {
+  padding: 1rem 1.5rem;
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.btn-view {
+  margin-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container__about {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
+  .btn-view,
+  .btn-download {
+    padding: 1.2rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .btn-view {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container__about {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container__about__left {
+    align-self: center;
+    width: 40%;
+  }
+
+  .container__about__right {
+    width: 60%;
+  }
+
+  .section__about__h1 {
+    font-size: 2.9rem;
+  }
+}
+
 /*Media queries for width adjustment*/
 @media (min-width: 768px) {
   .container {
