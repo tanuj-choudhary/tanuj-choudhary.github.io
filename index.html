@@ -6,6 +6,12 @@
     <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
+
+    <!--Fonts-->
+    <link rel="stylesheet" id="mak-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C300%2C400%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+
+    <!---Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   </head>
   <body>
     <!----------------------Home Section---------------------->
@@ -220,6 +226,9 @@
     <!----------------------Contacts Section---------------------->
     <section class="section section__contacts">
       <div class="container">
+
+        <div class="contacts">
+
         <h1 class="contacts__h1">Contact me</h1>
 
         <div class="contacts__wrapper">
@@ -228,32 +237,34 @@
 
             <ul class="contact__details">
               <li class="contact__details__item">
-                <i class="contact__details__item__icon"></i
-                ><span class="contact__details__item__text">abcd</span>
+                <i class="fas fa-map-marker-alt contact__details__item__icon"></i>
+                <span class="contact__details__item__text">Your location</span>
               </li>
 
               <li class="contact__details__item">
-                <i class="contact__details__item__icon"></i
-                ><span class="contact__details__item__text">abcd</span>
+                <i class="fas fa-envelope contact__details__item__icon"></i>
+                <span class="contact__details__item__text">abc@gmail.com</span>
               </li>
 
               <li class="contact__details__item">
-                <i class="contact__details__item__icon"></i
-                ><span class="contact__details__item__text">abcd</span>
+                <i class="fas fa-phone contact__details__item__icon"></i>
+                <span class="contact__details__item__text">+91 123456</span>
               </li>
             </ul>
 
+            <h5 class="contacts__h5">Follow me</h5>
+
             <ul class="contacts__follow-links">
               <li class="follow__links__follow__link">
-                <i class="follow__links__follow__link__img"></i>
+                <i class="fab fa-facebook-f follow__links__follow__link__img"></i>
               </li>
 
               <li class="follow__links__follow__link">
-                <i class="follow__links__follow__link__img"></i>
+                <i class="fab fa-twitter follow__links__follow__link__img"></i>
               </li>
 
               <li class="follow__links__follow__link">
-                <i class="follow__links__follow__link__img"></i>
+                <i class="fab fa-linkedin follow__links__follow__link__img"></i>
               </li>
             </ul>
           </div>
@@ -261,24 +272,27 @@
             <form class="contacts__form">
               <div class="contacts__form__field">
                 <label class="contacts__form__label" for="name">Name</label>
-                <input type="text" class="contacts__form__input" />
+                <input type="text" placeholder="Type your name" class="contacts__form__input" />
               </div>
+              
+              <div class="contacts__form__row">
 
-              <div class="contacts__form__field">
+              <div class="contacts__form__field contacts__form__field__phone">
                 <label class="contacts__form__label" for="name"
                   >Phone Number</label
                 >
-                <input type="text" class="contacts__form__input" />
+                <input type="text" placeholder="Type your phone number" class="contacts__form__input" />
               </div>
 
-              <div class="contacts__form__field">
+              <div class="contacts__form__field contacts__form__field__email">
                 <label class="contacts__form__label" for="name">Email</label>
-                <input type="text" class="contacts__form__input" />
+                <input type="text" placeholder="Type your email" class="contacts__form__input" />
               </div>
+            </div>
 
               <div class="contacts__form__field">
                 <label class="contacts__form__label" for="name">Message</label>
-                <input type="text" class="contacts__form__input" />
+                <textarea type="text" placeholder="Type your message" class="contacts__form__input contacts__form__input__message" ></textarea>
               </div>
 
               <div class="contacts__form__action">
@@ -288,12 +302,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <!----------------------Contacts Section Ends---------------------->
 
-    <!----------------------Footer Section---------------------->
-    <section class="section section__footer">
-      <div class="container">
         <footer class="footer">
           <img src="" alt="logo" class="footer__logo" />
           <p class="footer__p">
