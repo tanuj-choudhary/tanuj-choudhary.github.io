@@ -400,6 +400,91 @@ p {
   }
 }
 
+/*********************Projects Section*********************/
+.projects__project {
+  display: flex;
+  flex-direction: column;
+}
+.project__left {
+  order: 1;
+  padding: 30px 0px;
+}
+
+.project__h1 {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.project__p {
+  line-height: 1.7rem;
+}
+
+.project__btns {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-live {
+  color: rgb(248, 248, 248);
+  font-size: 14px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.repo__img {
+  background-color: var(--primary-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease 0s;
+}
+
+.repo__img:hover {
+  transform: scale(1.2);
+}
+
+.btn-live {
+  margin-right: 1.5rem;
+}
+
+.project__right {
+  order: 0;
+  margin-top: 80px;
+}
+
+.project__img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+  .projects__project {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project__h1 {
+    margin-bottom: 3rem;
+  }
+
+  .project__p {
+    margin-bottom: 4rem;
+  }
+
+  .project__left {
+    order: 0;
+    margin-right: 5rem;
+  }
+
+  .project__right {
+    order: 1;
+    margin-top: 0;
+  }
+}
+
 /*Media queries for width adjustment*/
 @media (min-width: 768px) {
   .container {
