@@ -196,6 +196,15 @@ p {
   }
 }
 
+.btn-hire {
+  transition: all 0.3s;
+}
+
+.btn-hire:hover {
+  background-color: var(--bg-color-2);
+  color: var(--primary-color);
+}
+
 .hero-container__img {
   max-width: 100%;
   height: auto;
