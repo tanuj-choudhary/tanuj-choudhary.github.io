@@ -59,6 +59,7 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
+  outline: none;
 }
 
 .btn-primary {
@@ -286,9 +287,11 @@ p {
 
 .btn-view,
 .btn-download {
+  display: block;
   padding: 1rem 1.5rem;
   margin-top: 0.7rem;
   font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 .btn-view {
