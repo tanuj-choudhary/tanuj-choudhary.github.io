@@ -172,6 +172,29 @@ p {
   color: #cccccc;
   margin-bottom: 2.2rem;
   line-height: 1.9rem;
+  border-right: solid 3px var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 3s steps(40, end) 1s 1 normal both,
+    animated-cursor 600ms steps(40, end) infinite;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 260px;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: var(--primary-color);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 .hero-container__img {
