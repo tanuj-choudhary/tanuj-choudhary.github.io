@@ -198,6 +198,7 @@ p {
 
 .btn-hire {
   transition: all 0.3s;
+  padding: 1rem 3.5rem;
 }
 
 .btn-hire:hover {
