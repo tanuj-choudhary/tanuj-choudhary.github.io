@@ -224,6 +224,7 @@ p {
   }
   .hero-container__right {
     width: 50%;
+    height: 350px;
   }
   .hero-container__img {
     padding-top: 0px;
@@ -241,6 +242,7 @@ p {
   }
   .hero-container__right {
     width: 60%;
+    height: 550px;
   }
 }
 
