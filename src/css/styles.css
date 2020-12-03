@@ -584,6 +584,12 @@ p {
   display: flex;
 }
 
+.follow__link__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
 .follow__links__follow__link__img {
   margin-right: 20px;
   color: #727b86;
