@@ -416,6 +416,11 @@ p {
   padding: 40px;
 }
 
+.section__skills__box__icon {
+  color: white;
+  font-size: 3rem;
+}
+
 .section__skills__box__h2,
 .section__skills__box__p {
   color: var(--white);
