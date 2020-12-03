@@ -57,7 +57,6 @@ const Controller = (() => {
     e.preventDefault();
 
     const formValues = getFormValues();
-    console.log(formValues);
 
     window.open(`mailto:tanujchoudhary001@example.com?subject=${formValues.subject}&body=${formValues.message}`);
   } 
